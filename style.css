@@ -25,9 +25,21 @@ nav{
 }
 
 .nav-head{
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.nav-head img{
+    width: 59px;
+    /* height: 55px; */
+    border-radius: 250px;
 }
 
+.nav-head h1{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .nav-list{
     display: flex;
     justify-content: center;
@@ -138,8 +150,111 @@ nav{
     width: 420px;
     border-radius: 15px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
 }
 
+.product{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.product .card-container{
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
 
+.product .card-container h2{
+    font-size: 30px;
+}
+.product .card-container .cards{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.product .card-container .cards .card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(247, 236, 236);
+    border-radius: 5px;
+    width: 50%;
+    transition: .5s ease-in-out;
+    padding: 18px;
+    gap: 10px;
+}
+
+.product .card-container .cards .card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product .card-container .cards .card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.product .card-container .cards .card .price{
+    cursor: pointer;
+    font-size: 28px;
+    color: rgba(232, 59, 59, 0.958);
+    font-weight: bolder;
+}
+
+.product .card-container .cards .card .details{
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.product .card-container .cards .card .card-bnt{
+    width: 100%;
+    background-color: rgb(236, 143, 143); 
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+ 
+.product .card-container .cards .card .card-bnt:hover{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(234, 96, 96);
+}
+
+.product .card-container .card-view-btn{
+    width: 18%;
+    padding: 10px;
+}
+
+.product .card-container .card-view-btn button{
+    width: 100%;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color:rgb(86, 131, 86);  
+    color: white; 
+    border: 1px solid white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product .card-container .card-view-btn button:hover{
+    background-color:rgb(90, 142, 90);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: none;  
+}
+
+footer{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(236, 143, 143);
+}
