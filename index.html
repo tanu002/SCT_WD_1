@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./media.css">
+    <link rel="icon" href="./logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <nav>
@@ -24,11 +27,32 @@
           <button class="sign-up">Signup</button>
           <button class="login">Login</button>
         </div>
+        <div class="nav-mobile-btn" id="nav-btn">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </div>
       </div>
     </nav>
+    <div class="nav-mobile" id="nav-menu">
+      <div class="nav-mobile-list">
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div class="nav-mobile-btn">
+        <button class="sign-up">Signup</button>
+        <button class="login">Login</button>
+      </div>
+    </div>
     <div class="container">
       <div class="pic">
         <img src="./cactus.jpg" alt="not found" />
+      </div>
+      <div class="pic-content">
+        <h1>Welcome to Nature Nursery</h1>
+        <p>Explore a wide range of plants and bring nature closer to your home. Let's start your green journey today.</p>
+        <button>Let's Start</button>
       </div>
     </div>
     <div class="hero">
@@ -87,8 +111,41 @@
         </div>
       </div>
     </div>
+
     <footer>
-        
-    </footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2>About Nature Nursery</h2>
+            <p>
+              We are committed to bringing nature closer to you. Whether you're a gardening enthusiast or just starting out, our wide range of plants, trees, and gardening tools are here to help you create the green space of your dreams. Together, let's grow a greener tomorrow.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 123 Kolkata, Nature City</p>
+            <p><i class="fas fa-phone"></i> +91 123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@naturenursery.com</p>
+            <div class="footer-icons">
+                <img src="./facebook.svg" alt="facebook link">
+                <img src="./instagram.svg" alt="instagram link">
+                <img src="./youtube.svg" alt="youtube link">
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          &copy; 2024 Nature Nursery | Terms of Service · Privacy Policy
+        </div>
+      </footer>   
+      <script src="script.js"></script>
   </body>
 </html>
